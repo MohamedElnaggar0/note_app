@@ -10,7 +10,7 @@ final class AddNotesLoading extends AddNotesState {}
 final class AddNotesSuccess extends AddNotesState {}
 
 final class AddNotesfailure extends AddNotesState {
-  final String error;
+  final String errorMessage;
 
-  AddNotesfailure({required this.error});
+  AddNotesfailure(this.errorMessage);
 }
